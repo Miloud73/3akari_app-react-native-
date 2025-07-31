@@ -1,8 +1,7 @@
-import { View, Text, ScrollView, Image, TouchableOpacity, ImageSourcePropType, Alert } from 'react-native'
+import { View, Text, ScrollView, Image, TouchableOpacity,  Alert } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import icons from '@/constants/icons';
-import images from '@/constants/images';
 import SettingsItems from '@/components/SettingsItems';
 import { settings } from '@/constants/data';
 import { useGlobalContext } from '@/lib/global-provider';
@@ -22,7 +21,7 @@ const Profile = () => {
     if(result){
       Alert.alert("success" , "you have been logged out successfully")
       refetch();
-      
+
     }else{
       Alert.alert("Error" , "An error occured while logging out")
       

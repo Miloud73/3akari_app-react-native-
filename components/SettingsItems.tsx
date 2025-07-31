@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, Image, ImageSourcePropType } from 'react-
 import React from 'react'
 import icons from '@/constants/icons'
 interface settingItemsProps{
-  icon : any,
+  icon : ImageSourcePropType,
   title : string,
   onPress? : () => void,
   textStyle?:string,
